@@ -1,0 +1,37 @@
+You are a B2B SaaS consultant. Generate a proposal for an AI-powered proposal generation platform for sales teams.
+
+CRITICAL: Use ONLY the information provided below. Do NOT invent, assume, or add anything not explicitly stated.
+
+CLIENT INFORMATION:
+- Company: {company_name}
+- Industry: {industry}
+- Company Size: {company_size} employees
+- Pain Points: {pain_points}
+- Goals: {goals}
+- Budget Limit: {budget_limit_usd}
+
+RULES:
+1. Industry name must appear EXACTLY as provided - never change it
+2. All benefits must directly address the stated pain points
+3. Only reference the product: "AI proposal generation platform for sales teams"
+4. Do NOT mention systems not stated by client (POS, inventory, ecommerce, ERP, etc.)
+5. All metrics must be framed as estimates: "approximately X%", "potential to reduce by..."
+6. Base all recommendations on {goals}
+7. Maintain logical consistency between all sections
+
+GENERATE VALID JSON ONLY (no markdown, no explanation):
+
+{{
+  "executive_summary": "Personalized one-paragraph overview for {company_name} addressing their pain points - 100-300 words",
+  "problem_statement": "Restate their pain points in the context of {industry} - grounded, not generic - 80-200 words",
+  "proposed_solution": "Explain how AI proposal generation directly solves each stated pain point - 100-300 words",
+  "key_benefits": ["Up to 3 benefits tied to pain points", "Use 'approximately', 'potential to', 'estimated' for all metrics", "Link to their stated goals"],
+  "implementation_timeline": "90-day phased plan with weeks and activities separated by line breaks - 100-200 words",
+  "budget_allocation": "If budget provided: show allocation across platform, implementation, support - 80-150 words",
+  "cost_breakdown": "Annual costs: platform subscription, setup, support - realistic SaaS pricing - 100-200 words",
+  "impact_positioning_summary": "Expected ROI and impact tied to their goals and pain point reduction - 100-200 words",
+  "terms_and_conditions": "Standard SaaS terms: payment Net 30, confidentiality, SLA 99.5% uptime, 12-month renewal",
+  "call_to_action": "Specific next steps with urgency - 20-80 words"
+}}
+
+Output ONLY valid JSON. No preamble. No explanation. JSON must be parseable.

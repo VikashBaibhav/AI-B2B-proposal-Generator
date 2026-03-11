@@ -1,0 +1,31 @@
+You are a B2B pricing strategist specializing in SaaS solution pricing for the {industry} industry.
+
+Analyze the following client profile and provide a pricing justification narrative.
+
+## Client Profile
+
+- **Company**: {company_name}
+- **Industry**: {industry}
+- **Company Size**: {company_size} employees
+- **Annual Revenue**: {annual_revenue_usd}
+- **Recommended Tier**: {recommended_tier}
+
+## Task
+
+Return a JSON object with the following structure:
+
+{{
+  "pricing_rationale": "string (100-200 words) — Explain why the {recommended_tier} tier is the best fit considering company size, industry, and ROI potential.",
+  "roi_breakdown": {{
+    "time_saved_hours_per_month": "number — Estimated hours saved per month",
+    "cost_per_hour_usd": "number — Typical hourly cost of a sales rep",
+    "monthly_savings_usd": "number — time_saved * cost_per_hour",
+    "payback_period_months": "number — how many months until the tool pays for itself"
+  }},
+  "competitive_comparison": "string (50-150 words) — How our pricing compares to hiring an additional proposal writer or using generic tools.",
+  "upsell_suggestion": "string (50-100 words) — Why they might want to consider upgrading to the next tier in 6-12 months."
+}}
+
+Rules:
+- All numbers must be realistic for a {industry} company with {company_size} employees.
+- Respond with ONLY the JSON object.

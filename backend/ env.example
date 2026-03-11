@@ -1,0 +1,31 @@
+# =============================================================================
+# AI B2B Proposal Generator — Backend Environment Variables
+# =============================================================================
+# Copy this file to .env and fill in your values:
+
+# =============================================================================
+
+# ---- Gemini Configuration ---------------------------------------------------
+
+# Your Google AI API key (required)
+# Get one at: https://aistudio.google.com/app/apikey
+GOOGLE_API_KEY=your-google-api-key-here
+
+# ---- Server Configuration ---------------------------------------------------
+
+HOST=0.0.0.0
+PORT=8000
+
+# Set to "false" in production
+RELOAD=true
+
+# ---- CORS -------------------------------------------------------------------
+
+# Comma-separated list of allowed frontend origins
+ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000
+
+# ---- Logging ----------------------------------------------------------------
+
+# Log level: DEBUG | INFO | WARNING | ERROR | CRITICAL
+# WARNING: Setting DEBUG logs full prompt/response content (may include client PII)
+LOG_LEVEL=INFO
