@@ -124,20 +124,7 @@ The app will be available at **http://localhost:5173**
 
 ---
 
-## Environment Variables
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `GOOGLE_API_KEY` | ✅ Yes | — | Google AI Studio API key |
-| `BACKEND_HOST` | No | `0.0.0.0` | Host to bind the server to |
-| `BACKEND_PORT` | No | `8000` | Port to run the backend on |
-| `RELOAD` | No | `true` | Enable hot-reload (disable in production) |
-| `LOG_LEVEL` | No | `INFO` | Logging level (`DEBUG`, `INFO`, `WARNING`, `ERROR`) |
-| `ALLOWED_ORIGINS` | No | `http://localhost:5173` | Comma-separated CORS allowed origins |
-
-
-
----
 
 ## API Endpoints
 
@@ -168,18 +155,6 @@ pytest tests/test_proposal_validator.py -v
 
 ---
 
-##  Key Files
-
-| File | Purpose |
-|------|---------|
-| `backend/prompts/proposal_generation.txt` | Main AI prompt template |
-| `backend/prompts/pricing_analysis.txt` | Pricing analysis prompt |
-| `backend/validators/proposal_validator.py` | JSON schema validation for AI output |
-| `backend/application/use_cases/generate_proposal.py` | Core proposal generation orchestration |
-| `backend/application/use_cases/calculate_pricing.py` | Pricing tier calculation logic |
-| `backend/infrastructure/ai/gemini_service.py` | Gemini API integration |
-
----
 
 ##  Contributing
 
