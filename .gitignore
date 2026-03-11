@@ -1,0 +1,54 @@
+# =============================================================================
+# AI B2B Proposal Generator — .gitignore
+# =============================================================================
+
+# ---- Secrets (NEVER commit these) ------------------------------------------
+.env
+*.env
+
+# ---- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ---- Logs -------------------------------------------------------------------
+*.log
+logs/
+backend/backend.log
+backend/server.log
+
+# ---- Node / Frontend --------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.vite/
+.npm
+
+# ---- OS files ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDE / Editor -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Misc -------------------------------------------------------------------
+# Scratch / temp files at backend root
+backend/26.0.1
+*.mp4
